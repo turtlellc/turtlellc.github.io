@@ -1,27 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Turtle LLC</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .background-blur {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(4px);
+        }
+
+        .body-background {
+            background-image: url('body-bg.png');
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            color: #000;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding-bottom: 10px;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+            padding: 20px;
+        }
+
+        header h1,
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #0069d9;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        .header-icon img {
+            width: 80%;
+        }
+
+        .content {
+            padding: 20px;
+            background: #f8f9fa;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+
+        .app-item {
+            background: #e9ecef;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+
+        .app-item img {
+            max-width: 100px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .app-item h3 {
+            margin-top: 0;
+        }
+
+        .app-item p {
+            clear: both;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #28a745;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background: #218838;
+        }
+    </style>
 </head>
+
 <body>
 
-<header class="container">
-    <h1>Turtle LLC</h1>
-    <p>Making fun mobile games and apps</p>
-    <nav>
-        <a href="privacy-policy.html" class="button">Privacy Policy</a>
-        <a href="terms-and-services.html" class="button">Terms and Services</a>
-        <a href="contact-us.html" class="button">Contact Us</a>
-    </nav>
-</header>
+    <div class="background-blur body-background"></div>
 
-<div >
-   <h1>
-     Privacy Policy
-   </h1>
-</div>
+    <header class="container">
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <div class="header-icon">
+                <img src="icon-web-2.png" style="height: 100px; width: 120px; border-radius: 10px;" alt="Tech Turtle LLC Logo">
+            </div>
+            <div style="display: flex; flex-direction: column; margin-left: 30px;">
+                <h1>Tech Turtle LLC</h1>
+                <p>At Tech Turtle LLC, we're passionate about creating engaging mobile games and practical applications that users
+                love.</p>
+            </div>
+        </div>
+        <nav>
+            <a href="privacy-policy.html" class="button">Privacy Policy</a>
+            <a href="terms-and-services.html" class="button">Terms and Services</a>
+            <a href="contact-us.html" class="button">Contact Us</a>
+        </nav>
+    </header>
+
+
+    <div class="container content">
+        <h2>Privacy Policy</h2>
+        <p>
+            Hello, we are TURTLE Software Inc. (“TURTLE” or “We”)!
+            Respect for your privacy is important to you and to us. It’s essential that we earn your trust, and that TURTLE’
+            practices reflect our respect for your privacy. In this spirit, we created this policy to help you comprehend how we
+            collect, use, disclose or otherwise process your personal data. We also cover information about your rights and other
+            important details about your privacy, like how we secure your personal data. If you have any questions, please feel free
+            to email our privacy support officer at turtlellc@yahoo.com. Where relevant, TURTLE is the Controller under this policy.
+            When does this policy apply?
+            This privacy policy applies to all our mobile apps (our ‘Apps’) and to your use of our websites (‘Websites’ or ‘Web’):
+            <br>
+            <br>
+            <a href="https://turtlellc.github.io/">https://turtlellc.github.io/</a>
+            <br>
+            <br>
+            This policy also applies to communications you may have with us via email, through live chat on our Apps or through
+            social media.
+            When you click on links to third parties’ websites, or if you use a third party to create accounts on our Apps or
+            websites, such as Google, Facebook or Twitter, this privacy policy does not apply to your sharing of personal data with
+            these third parties. It’s always a good idea to read their privacy policies to understand what they do with your
+            personal data.
+            <br><br>
+            Our Apps and Websites can be accessed and used from around the world. The laws that apply to the protection of your
+            personal data may vary depending on where you reside. TURTLE strives to comply with all applicable laws – if you have
+            questions based on your situation, feel free to contact privacy support at <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a>. To see the specific
+            Privacy notice applicable to Texas residents.
+            <h4>When will I know that this policy has changed?</h4>
+            We reserve the right to and may change this Privacy Policy from time to time. Please review this policy regularly for
+            the latest updates on our data privacy practices. If we make any material changes, we will notify you through the App,
+            or by presenting you with a new version of this Privacy Policy. Your continued use of the App after the effective date
+            of an updated version of the Privacy Policy will indicate your acceptance of the Privacy Policy as modified. In some
+            cases, we will need to request that you accept changes to the Privacy Policy explicitly. In these cases where explicit
+            acceptance is required, we will contact you to request your acceptance. If you do not accept the terms of the Privacy
+            Policy, you may not use the App or Websites. Please exit the App and Websites immediately if you do not agree to the
+            terms of this Privacy Policy.
+            <h4>What do we mean by ‘personal data’?</h4>
+            We want to protect your privacy as much as possible, so we consider personal data to include any information which
+            allows us to identify you directly or indirectly, including through cookies and other electronic tools.
+            What do we mean by ‘cookies’?
+            <br><br>
+            Like many websites, our Websites and Apps use “cookies” to collect information. A cookie is a small data file that a
+            website puts on your computer’s hard disk so that the website can remember something about you at a later time. If you
+            are looking for more information on cookies, you can refer to websites such as <a href="http://www.cookiecentral.com/">http://www.cookiecentral.com/</a>.
+            In this privacy policy, when we refer to “cookies” we include other technologies with similar purposes, such as pixels,
+            tags, web beacons and the mobile identifiers which we collect from your cell phone (Android’s Advertising ID (AAID/IFA)
+            or Apple’s Identifier for Advertising).
+            <br><br>
+            There are different types of cookies. TURTLE uses both first party and third party cookies:
+            <br><br>
+            • First Party Cookies – First party cookies are those that are issued by us, and they can only be set or retrieved by
+            us. They are used for purposes specific to us, such as to personalize the Website.
+            <br>
+            • Third Party Cookies – Third party cookies are placed on our Websites, in emails or Apps by other entities, such as to
+            create new functionalities, to monitor the activity of users on a Website/App for the purpose of Web/App analytics or
+            conduct advertising.
+            <br><br>
+            Cookies can also be classified based on their roles. These are the types of cookies we use on our Websites and Apps:
+            <br><br>
+            • Strictly Necessary – These cookies are essential to enable you to navigate our website and use its key features.
+            <br>
+            • Performance Cookies – Performance cookies collect information about how users use our websites or Apps, such as the
+            pages they go to most often, what pages or functions they use, how long a user spends meditating, and whether they get
+            error messages from our webpages. These cookies provide us with information about our sites/apps traffic and
+            performance. The actions and activities may be attributable to your device information, browsers, email address and/or
+            IP address.
+            <br>
+            • Functionality Cookies – These cookies are used for enhanced functionalities that are useful to you, such as social
+            media sharing, but which are not necessary for our websites or Apps to perform their essential functions.
+            <br>
+            • Targeting Cookies – These cookies are used to deliver advertising more relevant to you and your interests. They are
+            also used to limit the number of times you see an ad as well as to help measure the effectiveness of a campaign.
+            If you are using one of our Websites, you can change your browser’s settings so it will stop accepting cookies and web
+            beacons or to prompt you before accepting a cookie or web beacon. Opt-out options for cookies and web beacons.
+
+            <h4>Personal Data you provide us directly</h4>
+            General Information. When you sign up to use the App, we may collect Personal Data about you such as:
+            <br>
+            • Name you assign to your account;<br>
+            • Email address you assign to your account; and <br>
+            • Password or passcode you assigned to your account. <br><br>
+            You can create an account on some of our Apps and Websites using your Facebook, Google, Apple or Twitter account (you
+            should read the applicable third party privacy policy to see what other information those parties collect when you use
+            their account to login to our Websites/Apps).
+            <br><br>
+            Sleep and Well-being. When you use the App, you may choose to provide personal information which might be considered
+            related to your health and well-being such as:
+            <br>
+            • When you wake up and when you go to sleep (and other things related to your sleep patterns);<br>
+            • When you feel hungry; and <br>
+            • If you meditate and for how long. <br><br>
+            You also may give us the ability to import into the App Personal Data about your health and activities from third-party
+            services such as Apple HealthKit and Google Fit. Such imported Personal Data may include your sleep patterns/data. In
+            order for us to process any Personal Data under this category we will explicitly ask your consent on the registration
+            screen. <br><br>
+            If you take our sleep “chronotypes” quiz, we will only temporarily collect your answers to those questions for the
+            purposes of delivering your “sleep score” or chronotype number. We do not store your individual answers to the
+            chronotypes quiz, but we may store your “sleep score” against your unique TURTLE client ID and you will be able to see
+            your chronotype in your profile. <br><br>
+            <h4>Personal Data we may collect automatically</h4>
+            When you access or use the App or Web, we may automatically collect the following information: <br>
+            <h5>Device Information:</h5>
+            • Hardware model;<br>
+            • Information about the operating system and its version;<br>
+            • Unique device identifiers (e.g. IDFA);<br>
+            • Mobile network information;<br>
+            • Device storage information;<br>
+            • Browsers information (for Web);<br>
+            • App information (like App version, SDKs version, etc) <br>
+            <h5>Location Information:</h5>
+            • IP address;<br>
+            • Time zone;<br>
+            • Information about your mobile service provider. <br><br>
+            We do not collect precise location data about you, although we are able to see in which city you are located, based on
+            your IP address. We also collect information about the browser or device used to access the Website and App, such as the
+            user’s mobile device ID (if you consent/opt in to tracking this) and IP address. This allows us to personalize your
+            experience, and ensure that you are receiving relevant content and the right legal disclosures applicable to you based
+            on your legal jurisdiction.
+            <h5>App usage data, including, among others:</h5>
+            • Frequency of use;<br>
+            • Areas and features of our App you visit;<br>
+            • Your use patterns generally; and <br>
+            • Engagement with particular features. <br><br>
+            To collect this information, we may send cookies to your mobile device or computer. Opt-out options for cookies and web
+            beacons. <br><br>
+            Data from external sources. We may use third-party tools like AppsFlyer that provide us some of your attribution data
+            (which basically means information about the ad that brought you to the website or App) that we may further utilize to
+            customize and personalize your App experience. We may also use such data for statistical purposes and analytics.
+            <h4>How do we use your Personal Data?</h4>
+            We will not collect or process your Personal Data without having a reason and providing you with notice. So, for any
+            processing of your Personal data we need to have some valid ground for conducting the processing, this is sometimes
+            referred to as “legal basis”. <br> <br>
+            We process your Personal Data based on the following legal basis: <br><br>
+            • Your consent. We use your permission to process your Personal Data. For example, when you provide us information on
+            the registration screen, we rely on your permission to process your data. We will also rely on your permission in other
+            instances when we ask for it. You also consent to the use of your sensitive personal data as described below.. <br>
+            • Your contractual relations with us. We may need to process some Personal Data for making the App and its services
+            available for access, installation and further use. When we manage your account and respond to your inquiries about the
+            App/website, we also rely on a contractual relationship. <br>
+            • Legitimate interest. We may process some of your personal data to pursue commercial interests and wider societal
+            benefits like providing the best App/website that we can. In particular, we have legitimate interests in using your
+            Personal Data for product development and internal analytics and to otherwise improve the safety, security, and
+            performance of the App/site. We only rely on our or a third party’s legitimate interests when these interests are not
+            overridden by your rights and interests. <br>
+            • Legal obligation. We may be obligated to process some of your Personal Data to comply with applicable laws and
+            regulations. <br><br>
+            Here is the description of the main type of processing activities we conduct with your Personal data and related legal
+            basis for that (with some basic examples which are not exhaustive):
+            <h4>Purpose of processing</h4>
+            Legal basis for processing
+            <h5>Example</h5>
+            to analyze, operate, maintain and improve the App, to add new features and services to the App, to support the existing
+            functions of the App 
+            <h5>Consent</h5>
+            We may use data about your sleep cycle to suggest a time that is best for you to go to bed or wake up
+            to customize content and materials you see when you use the App
+            <h5>Consent</h5>
+            Based on your preferences and logged-in information we may provide you certain suggested sleep stories to listen to or
+            meditations to try
+            to customize product and service offerings and recommendations to you, including third-party products and offerings
+            (excluding data from Apple HealthKit and Google Fit)
+            <h5>Consent</h5>
+            We may send you a discount offer for our Premium App options to your email. You can opt-out anytime by contacting us at
+            mailto: <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a>.
+            to provide and deliver the products and services you request, process transactions and send you related information,
+            including confirmations and reminders
+            <h4>Contract</h4>
+            Using your device data we may send you a reminder to meditate, a mindfulness or sleep “tip”, or other suggestion.
+            Disable this anytime in your phone settings.
+            for billing (invoicing), account management and other administrative purposes, if applicable <br>
+            Contract <br>
+            We may send you an email with an invoice, if applicable.
+            to respond to your comments, questions and requests and to provide customer service <br>
+            Contract <br>
+            We may process your name and email to reply to your support requests
+            to send you technical notices, updates, security alerts and support and administrative messages
+            Legitimate interest
+            We may send you an email notification that contains a customer satisfaction survey You can opt-out anytime by contacting
+            us at mailto: <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a>.
+            to monitor and analyze trends, usage and activities in connection with our App
+            Consent
+            We may analyze your browsing activity in the App to understand what you like or dislike about it in order to improve
+            your future experience
+            solely with respect to information that you agree to share, for Company promotional purposes (except data from Apple
+            HealthKit and Google Fit)
+            Consent
+            If you give your consent, we can post your review or comment on our website
+            to comply with legal obligations and requests
+            Legal obligation
+            We may be required to process your personal data to comply with applicable laws and court orders. In this case, we make
+            sure that our legal counsel assists us in ensuring that we only process your personal data as required by the law, or
+            court orders.
+            <h4>Principles of processing</h4>
+            Data minimization and purpose limitation. We will not process Personal Data in a way that is incompatible with the
+            purposes for which it has been collected unless subsequently authorized by you or collect any Personal Data that is not
+            needed for the purposes. For any new purpose of processing we will ask your separate consent. <br><br>
+            No sale of Personal Data. We will never sell, rent, or disclose your Personal Data. In some jurisdictions, sharing data
+            can be considered a sale of data. We may share only some of your Personal Data to our service providers strictly limited
+            to cases and purposes stipulated in this Privacy Policy and in accordance with agreements we have with them. We will
+            also never use the information gained through your use of the HealthKit and Google Fit framework for advertising or
+            similar services, or sell it to advertising platforms, data brokers, or information resellers.
+            <h4>Do we share my personal data with third-parties?</h4>
+            Information about you may be disclosed to third parties for one or more of the following purposes: <br><br>
+            • For business purposes and advertising: We may share your information with vendors and service providers, including our
+            data hosting and data storage partners, analytics and advertising providers, and vendors providing technology services
+            and support, payment processing, data security, and similar services. We also may share information with professional
+            advisers, such as auditors, law firms, and accounting firms. <br>
+            • With your direction or consent: We may share your information with third parties if you request or direct us to do so. <br>
+            • With affiliates within our corporate group: We may share your information with any subsidiaries or parent companies
+            within our corporate group. <br>
+            • Compliance with law: We may share your information with a court, a regulatory entity, law enforcement personnel, or
+            pursuant to a subpoena, to comply with applicable law or any obligations thereunder. <br>
+            • In the context of a transaction: We may share your information in connection with an asset sale, merger, bankruptcy,
+            or other business transaction. <br>
+            • For other business reasons: We may share your information to enforce any applicable Terms and Conditions and Terms of
+            Use, and to ensure the safety and security of the site and App and our users <br>
+            <h4>Advertising partners and AppsFlyer</h4>
+            We may share some of your non-health Personal Data (like your device ID, IDFA, IP address, version information) with
+            AppsFlyer, a mobile marketing platform, that handles your Personal Data in accordance with our instructions. By using
+            AppsFlyer and its integrated partners we are able to reach you and people like you on various platforms that might be
+            interested in our products too. AppsFlyer also helps us to determine if our advertising campaigns are going well by
+            providing advertising attribution services. If we need to share your Personal Data with other platforms for this
+            purpose, except as defined herein, we will ask for your consent. <br> <br>
+            This is how we work the AppsFlyer/integrated ad platforms: <br> <br>
+            • You become a user of one of our Apps, and we start sharing Personal Data, strictly limited to the following set: <br>
+            • Technical identifiers: IP address (which may also provide location information), User agent, IDFA (Identifier for
+            advertisers), Android ID (in Android devices), Google Advertiser ID, Customer-issued user ID and other similar unique
+            technical identifiers. <br>
+            • Your subscription status; <br>
+            • The fact of application launch. <br>
+            • We send your data to AppsFlyer, which analyzes it and provides us reports and insights on how to optimize our
+            promotional campaigns. <br>
+            • At the same time, AppsFlyer sends your data to some of its integrated partners (e.g. Pinterest, Google Ads, Apple
+            Search Ads, FB marketing network, and a couple of others) to find you or people like you on different platforms,
+            including social media websites. These integrated partners analyze your data and show relevant information about the App
+            to people who might be potentially interested in it or remind you about revisiting the App, if you stopped using it a
+            while ago. <br>
+            Read more about AppsFlyer here and its integrated partners here.
+            Opt-out options. You can withdraw your consent or opt-out, whatever applies in your case, from sharing of your Personal
+            Data in accordance with this subsection anytime by using one of the following options:
+            • By contacting us at <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a> <br>
+            • By writing us at 1010-615 Boul Rene-Levesque O Montreal, QC, H3B 1P5, CANADA <br>
+            • By adjusting your device settings in iOS or Android in order to stop sharing your IDFA or Android Advertising ID.
+            <h4>Use of Cookies, Web Beacons, and Similar Technology for Advertising Networks</h4>
+            You and others may see certain ads for our Apps or Websites on other websites because we participate in ad networks. Ad
+            networks allow us to target our messaging to users through demographic, interest-based, and contextual means. These
+            networks track individuals’ online activities over time by collecting information through automated means, including
+            through the use of cookies, web server logs, and web beacons. The networks use this information to show advertisements
+            that may be tailored to an individual’s interests. The information our ad networks may collect includes information
+            about your visits to websites that participate in the relevant ad networks, such as the pages or advertisements you view
+            and the actions you take on the websites. This data collection takes place both on our websites and on third-party
+            websites that participate in the ad networks. This process also helps us track the effectiveness of our marketing
+            efforts and assists other websites and advertising partners to find you or people like you on different platforms,
+            including social media websites. <br> <br>
+            By way of example, if you use Web (only) we may use Facebook Conversion Tracking Pixel to record how efficient our
+            advertisements are for statistical and market research purposes. Facebook may connect the data with your Facebook
+            account and use the data for their own advertising purposes, in accordance with its current privacy policy, No direct
+            Facebook tracking is enabled in the App. <br> <br>
+            Google Analytics offers a function about remarketing audiences. It allows us to create segments based on the analytics
+            that we have obtained, and then use it as part of remarketing campaigns on our Google Ads account. Google Ads uses a
+            different cookie than Google Analytics.s mentioned above, you can opt-out of cookies and web beacons.
+            <h4>Analytics and Performance Partners</h4>
+            In addition to using AppsFlyer for analytics, we also use Iterable, Facebook SDK and Mixpanel to measure our performance
+            and to help increase the performance of our ad campaigns. These third parties provide us with analytics for our Websites
+            and Apps, which can then be used to segment users based on demographic information, custom events and user or session
+            activity as part of our interest-based advertising activities. We also use analytics to learn about how we can improve
+            our site and App and offer more services and functionality that may interest you.
+            We also use Google Analytics Demographics and Interest Reporting to better understand our websites’ performance. Google
+            Analytics uses third party cookies to get information about how you arrived on our website, the search terms which were
+            leveraged, the time of your visit, etc. <br><br>
+            If you want to opt-out from Google Analytics Demographics and Interest Reporting, you can do so by clicking here.
+            <h5>Social Media</h5>
+            Some of our pages, such as our blog posts, have an option allowing you to share the content on your social media. This
+            occurs through a tool which can collect indirect data about you, like your IP address and information derived from your
+            IP address (geographic location and information about your device like your preferred language). It may also collect the
+            time and date that you visited the page for sharing.
+            If you connect to our Apps or websites through your social media, we receive the information which you accept to share
+            with us to authenticate you.
+            <h4>Apple Health Kit & Android Sleep API</h4>
+            Apple HealthKit and Android Sleep API offers its users a central repository for health and fitness data on iPhone and
+            Android. If you authorize the use of Apple HealthKit or Android Sleep API, our Apps will communicate with Apple
+            HealthKit/Android Sleep API to access and share your data. These kits are designed to manage and merge data from
+            multiple sources – this means that with your permission, our data are merged with those of your other apps in
+            <h4>HealthKit/Android Sleep API.</h4>
+            We only share your data with HealthKit/Android Sleep API based on your consent, such as the time spent meditating
+            through meditation logs and your sleep data, if you enable this. Under no circumstances will we share the information
+            collected via the HealthKit/Android Sleep API to any third party, except if such third party is already providing you
+            health services with your prior consent. <br><br>
+            We do not use the information collected via HealthKit/Android Sleep API for advertising purposes nor are we selling the
+            data collected to any advertising platforms, data brokers or information resellers. Prior for disclosing your personal
+            data to third parties, we ensure that: <br><br>
+            • The personal data shared is limited to what is reasonably required for third parties to perform their services or
+            functions as detailed in their applicable services terms;<br>
+            • Our agreements with them include reasonable terms and conditions to protect your personal data;<br>
+            • These third parties provide reasonable guarantees that they will protect your personal data and comply with applicable
+            laws. <br>
+            <h4>Where do you store my personal data?</h4>
+            We store your data on Google Cloud. We may change our hosting companies in the future, in which case, we will update
+            this privacy policy. <br><br>
+            Your personal information is stored inside and outside of Canada, including in the United States. In this situation,
+            regarding personal data of European Union residents, we may transfer Personal Data to a Third Party outside the European
+            Union after entering into a data transfer agreement with the other party/parties, based on standard contractual clauses
+            adopted by the European Commission, or after adopting Binding Corporate Rules where necessary.
+            <h4>How do you ensure the security of my personal data?</h4>
+            We strive to protect your personal data by implementing security features that are proportionate to the risks, such as
+            unauthorized access or disclosure. Our Apps and websites use encryption, and access to your data is only granted on a
+            need-to-know basis to individuals with a non disclosure agreement or similar confidentiality obligations.
+            <h5>Security breaches</h5>
+            If we learn of a security systems breach, we may either post a notice, or attempt to notify you by email and will take
+            reasonable steps to remedy the breach as specified in applicable law and this Privacy Policy. If we learn of a potential
+            Personal Data breach, together with other actions referred to in this Privacy Policy (such as notifying you in certain
+            cases), we may also undertake particular actions to remedy the breach, including, but not limited to, logging you out
+            from all the devices, resetting a password (sending a temporary password for you to apply) and performing other
+            reasonably necessary activities and actions.
+            <h4>How long do you hold my personal data for?</h4>
+            We keep your personal data as long as required to fulfill the purpose for which it was collected, or in accordance with
+            the law (whichever is longer), for evidence and accounting purposes, for a period not exceeding the statutory limitation
+            periods applicable. If you are using our Apps, we keep your profile information as long as your subscription is active.
+            What are my rights regarding my personal data? <br><br>
+            You have the right to exercise your rights on your personal data, and we will try our best to help you. Your rights vary
+            depending on the laws that apply to your situation, and the specific circumstances of the request. Some of the rights
+            that may apply to you include the following rights: <br><br>
+            • Right to access your personal data;<br>
+            • Right to request additional information about how we process your personal data;<br>
+            • Right to rectify your personal data if incorrect, incomplete, invalid or ambiguous;<br>
+            • Right to object to the processing of your data in certain circumstances;<br>
+            • Right to request the erasure of your personal data;<br>
+            • Right to data portability of your personal data (Click here to see how we can help you transfer your subscription from 
+            an iOS phone or tablet to an Android device or the opposite). <br>
+            • For French individuals, Right to define guidelines regarding the fate of your personal data in the event of death.
+            If you want to exercise one of these rights and the situation allows for such exercise, we will generally help you
+            without additional charges. If you request a transcription, reproduction or transmission of your personal information,
+            we may have to charge a reasonable fee to process your request, subject to applicable laws. In this case, we will
+            contact you about these charges before addressing your request.
+            <br><br>
+            For security reasons and to avoid any fraudulent request, we may be required to provide proof of identity with the
+            request. After the request has been processed, this receipt will be destroyed.
+            <br>
+            If your request is denied, we will notify you in writing, provide you with detailed motives and information on how to
+            contest our decision. We will keep the relevant personal data until you have exhausted your options. In any event, we
+            will respond to your request within thirty (30) days, unless agreed otherwise.
+            To exercise your right, you can simply reach out to us at <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a>.
+            <h4>Privacy Policy for Texas Residents</h4>
+            This Privacy Policy for Texas Residents (this “Policy”) supplements the information contained in TURTLE’ “core” policy
+            above and applies solely to all visitors, users, and others who reside in the state of Texas (“consumers” or “you”). We
+            adopt this notice to comply with the Texas Consumer Privacy Act of 2018 (CCPA) and any terms defined in the CCPA have
+            the same meaning when used in this Policy. <br><br>
+            Where noted in this Policy, the CCPA temporarily exempts personal information reflecting a written or verbal
+            business-to-business communication (“B2B personal information”) from some of its requirements.
+            <h4>What information do we collect?</h4>
+            We collect information that identifies, relates to, describes, references, is reasonably capable of being associated
+            with, or could reasonably be linked, directly or indirectly, with a particular consumer, household, or device (“personal
+            information”). Personal information does not include: <br> <br>
+            • Publicly available information from government records. <br>
+            • Deidentified or aggregated consumer information. <br>
+            • Information excluded from the CCPA’s scope, like: <br>
+            • health or medical information covered by the Health Insurance Portability and Accountability Act of 1996 (HIPAA) and
+            the Texas Confidentiality of Medical Information Act (CMIA), clinical trial data, or other qualifying research data; <br>
+            • personal information covered by certain sector-specific privacy laws, including the Fair Credit Reporting Act (FCRA),
+            the Gramm-Leach-Bliley Act (GLBA) or Texas Financial Information Privacy Act (FIPA), and the Driver’s Privacy Protection
+            Act of 1994. <br><br>
+            In particular, we have collected the following categories of personal information from consumers within the last twelve
+            (12) months: <br><br>
+            We obtain the categories of personal information listed above from the following categories of sources:
+            • Directly from you. For example, from forms you complete or products and services you purchase and from the use of our
+            mobile applications.br <br><br>
+            • Indirectly from you. For example, from observing your actions on our website or while using our applications.
+            • From third-party business partners such as Iterable, Mixpanel, Apple, Google, AppsFlyer, social media sites, ad
+            networks, and analytics providers.
+            <h4>How do you use of Personal Information?</h4>
+            We may use or disclose the personal information we collect for one or more of the following purposes: <br><br>
+            • To fulfill or meet the reason you provided the information. For example, if you share your name and contact
+            information to ask a question about our products or services, we will use that personal information to respond to your
+            inquiry. If you provide your personal information to purchase a product or service, we will use that information to
+            process your payment and facilitate delivery. We may also save your information to facilitate new product orders or
+            process returns. <br>
+            • To provide, support, personalize, and develop our website, Apps, products, and services. <br>
+            • To create, maintain, customize, and secure your account with us. <br>
+            • To process your requests, purchases, transactions, and payments and prevent transactional fraud. <br>
+            • To provide you with support and to respond to your inquiries, including to investigate and address your concerns and
+            monitor and improve our responses. <br>
+            • To personalize your app or website experience and to deliver content and product and service offerings relevant to
+            your interests, including targeted offers and ads through third-party sites, and via email or text message (with your
+            consent, where required by law). <br>
+            • to monitor and analyze trends, usage, and activities in connection with our App <br>
+            • To help maintain the safety, security, and integrity of our website, products and services, databases and other
+            technology assets, and business. <br>
+            • For testing, research and product development, including to develop and improve our website, Apps, products, and
+            services. <br>
+            • To respond to law enforcement requests and as required by applicable law, court order, or governmental regulations. <br>
+            • As described to you when collecting your personal information or as otherwise set forth in the CCPA. <br>
+            • To evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of
+            some or all of our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in
+            which personal information held by us about our users is among the assets transferred. <br> <br>
+            We will not collect additional categories of personal information or use the personal information we collected for
+            materially different, unrelated, or incompatible purposes without providing you notice.
+            None of our Apps currently sell advertising data. Our newest Apps, including BetterSleep, no longer contain any
+            advertising-related code. The following Apps include legacy advertising code, but are no longer actively capable of
+            displaying targeted ads:
+            
+
+            <h4>iOS: </h4>
+            <h4>Android:</h4>
+            
+            <h5>Sharing Personal Information</h5>
+            We may share your personal information by disclosing it to a third party for a business purpose. In the preceding twelve
+            (12) months, we have disclosed personal information for a business purpose to the categories of third parties indicated
+            in the chart below. <br>
+            The CCPA defines “sale” broadly. It includes the sharing of personal information in exchange for anything of value.
+            According to this broad definition, in the 12 months before this section was last updated, our use of analytics and
+            targeting cookies and web beacons to deliver advertising tailored to individual interests may have been considered a
+            “sale” of personal information. <br>
+            In the preceding twelve (12) months, the categories of third parties listed may have received the following categories
+            of personal information for the listed reasons. For more options check. <br>
+            | Personal Information Category | Category of Third-Party Recipients | Business Purpose Disclosures | | — | — | | A:
+            Identifiers. | Data Analytics Providers; Operating Systems & Platforms; Ad Platform, Social Networks; Payment processing
+            vendors, customer support vendors | | B: Texas Customer Records personal information categories. | Payment processing
+            vendors, customer support vendors | | C: Protected classification characteristics under Texas or federal law. | None | |
+            D: Commercial information. | Payment processing vendors, customer support vendors | | E: Biometric information. | Apple
+            Kit/Google Fit | | F: Internet or other similar network activity. | Data Analytics Providers; Operating Systems &
+            Platforms; Ad Platforms, Social Networks; | | G: Geolocation data. | Data Analytics Providers; Operating Systems &
+            Platforms | | H: Sensory data. | None | | I: Professional or employment-related information. | None | | J: Non-public
+            education information. | None | | K: Inferences drawn from other personal information. | Data Analytics Providers;Ad
+            Platforms, Social Networks |
+            <h4>Your Rights and Choices</h4>
+            The CCPA provides consumers (Texas residents) with specific rights regarding their personal information. This section
+            describes your CCPA rights and explains how to exercise those rights.
+            Right to Know and Data Portability <br>
+            You have the right to request that we disclose certain information to you about our collection and use of your personal
+            information over the past 12 months (the “right to know”). Once we receive your request and confirm your identity (see
+            Exercising Your Rights to Know or Delete), we will disclose to you: <br> <br>
+            • The categories of personal information we collected about you. <br>
+            • The categories of sources for the personal information we collected about you. <br>
+            • Our business or commercial purpose for collecting or selling that personal information. <br>
+            • The categories of third parties with whom we share that personal information. <br>
+            • If we sold or disclosed your personal information for a business purpose, two separate lists disclosing: <br>
+            • sales, identifying the personal information categories that each category of recipient purchased; and <br>
+            • disclosures for a business purpose, identifying the personal information categories that each category of recipient
+            obtained. <br>
+            • The specific pieces of personal information we collected about you (also called a data portability request).
+            We do not provide a right to know or data portability disclosure for B2B personal information.
+            Right to Delete <br> <br>
+            You have the right to request that we delete any of your personal information that we collected from you and retained,
+            subject to certain exceptions (the “right to delete”). Once we receive your request and confirm your identity (see
+            Exercising Your Rights to Know or Delete), we will review your request to see if an exception allowing us to retain the
+            information applies. We may deny your deletion request if retaining the information is necessary for us or our service
+            provider(s) to: <br> <br>
+            • Complete the transaction for which we collected the personal information, provide a good or service that you
+            requested, take actions reasonably anticipated within the context of our ongoing business relationship with you, fulfill
+            the terms of a written warranty or product recall conducted in accordance with federal law, or otherwise perform our
+            contract with you. <br>
+            • Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those
+            responsible for such activities. <br>
+            • Debug products to identify and repair errors that impair existing intended functionality. <br>
+            • Exercise free speech, ensure the right of another consumer to exercise their free speech rights, or exercise another
+            right provided for by law. <br>
+            • Comply with the Texas Electronic Communications Privacy Act (Cal. Penal Code § 1546 et. seq.). <br>
+            • Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres
+            to all other applicable ethics and privacy laws, when the information’s deletion may likely render impossible or
+            seriously impair the research’s achievement, if you previously provided informed consent. <br>
+            • Enable solely internal uses that are reasonably aligned with consumer expectations based on your relationship with us. <br>
+            • Comply with a legal obligation. <br>
+            • Make other internal and lawful uses of that information that are compatible with the context in which you provided it. <br><br>
+            We will delete or deidentify personal information not subject to one of these exceptions from our records and will
+            direct our service providers to take similar action.
+            We do not provide these deletion rights for B2B personal information.
+            Exercising Your Rights to Know or Delete
+            To exercise your rights to know or delete described above, please submit a request by either: <br> <br>
+            • Calling us at (855) 213-6709 <br>
+            • Emailing us at <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a> <br>
+            Only you, or someone legally authorized to act on your behalf, may make a request to know or delete related to your
+            personal information. <br> <br>
+            You may only submit a request to know twice within a 12-month period. Your request to know or delete must:
+            • Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal
+            information or an authorized representative, which may include: <br>
+            • Logging in to your Web/App account using your username and password; <br>
+            • Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it. <br> <br>
+            We cannot respond to your request or provide you with personal information if we cannot verify your identity or
+            authority to make the request and confirm the personal information relates to you.
+            You will not need to have an existing account with us to submit a request to know or delete. However, we do consider
+            requests made through your password protected account sufficiently verified when the request relates to personal
+            information associated with that specific account.
+            We will only use personal information provided in the request to verify the requestor’s identity or authority to make
+            it.
+            For instructions on exercising your sale opt-out or opt-in rights, click here.
+            <h4>Response Timing and Format</h4>
+            We will confirm receipt of your request within ten (10) business days. If you do not receive confirmation within the
+            10-day timeframe, please contact <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a>.
+            We endeavor to substantively respond to a verifiable consumer request within forty-five (45) days of its receipt. If we
+            require more time (up to another 45 days), we will inform you of the reason and extension period in writing.
+            If you have an account with us, we will deliver our written response to that account. If you do not have an account with
+            us, we will deliver our written response by mail or electronically, at your option.
+            Any disclosures we provide will only cover the 12-month period preceding our receipt of your request. The response we
+            provide will also explain the reasons we cannot comply with a request, if applicable. For data portability requests, we
+            will select a format to provide your personal information that is readily useable and should allow you to transmit the
+            information from one entity to another entity without hindrance.br <br>
+            We do not charge a fee to process or respond to your verifiable consumer request unless it is excessive, repetitive, or
+            manifestly unfounded. If we determine that the request warrants a fee, we will tell you why we made that decision and
+            provide you with a cost estimate before completing your request.
+            Non-Discrimination <br>
+            We will not discriminate against you for exercising any of your CCPA rights. Unless permitted by the CCPA, we will not: <br> <br>
+            • Deny you goods or services. <br>
+            • Charge you different prices or rates for goods or services, including through granting discounts or other benefits, or
+            imposing penalties. <br>
+            • Provide you a different level or quality of goods or services. <br>
+            • Suggest that you may receive a different price or rate for goods or services or a different level or quality of goods
+            or services. <br>
+            <h4>Other Texas Privacy Rights</h4>
+            Texas’s “Shine the Light” law (Civil Code Section § 1798.83) permits users of our website that are Texas residents to
+            request certain information regarding our disclosure of personal information to third parties for their direct marketing
+            purposes. To make such a request, please send an email toturtlellc@yahoo.com.
+            <h5>Texas Minors</h5>
+            While our website and services are not intended for anyone under the age of 18, if you are a Texas resident who is under
+            age 18 and you are unable to remove publicly-available content that you have submitted to us, you may request removal by
+            contacting us at: turtlellc@yahoo.com. When requesting removal, you must be specific about the information you want
+            removed and provide us with specific information, such as the URL for each page where the information was entered, so
+            that we can find it. <br>
+            We are not required to remove any content or information that: (1) federal or state law requires us or a third party to
+            maintain; (2) was not posted by you; (3) is anonymized so that you cannot be identified; (4) you don’t follow our
+            instructions for removing or requesting removal; or (5) you received compensation or other consideration for providing
+            the content or information. Removal of your content or information from our system does not ensure complete or
+            comprehensive removal of that content or information from our systems or the systems of our service providers. We are
+            not required to delete the content or information posted by you; our obligations under Texas law are satisfied so long
+            as we anonymize the content or information or render it invisible to other users and the public.
+            <h4>Changes to Our Privacy Policy</h4>
+            We reserve the right to amend this Policy at our discretion and at any time. When we make changes to this Policy, we
+            will post the updated notice on our website and update the notice’s effective date. Your continued use of our website,
+            App, products, and services following the posting of changes constitutes your acceptance of such changes.
+            <h4>Contact Information</h4>
+            If you have any questions or comments about this notice, the ways in which we collect and use your information described
+            here and in the Privacy Policy, your choices and rights regarding such use, or wish to exercise your rights under USA
+            law, please do not hesitate to contact us at: <br> <br> <br>
+            
+            Email: <a href="turtlellc@yahoo.com">turtlellc@yahoo.com</a> <br>
+            Postal Address: 
+            TURTLE LLC.75835, Texas, Houston
+
+        </p>
+    </div>
+
+    <div class="container content">
+        <h2>Apps</h2>
+        <div class="app-item">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/db/5d/15db5d43-18a5-a6eb-15fb-307ef9a879df/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/246x0w.png"
+                style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
+            <h3>PDF Generator Document Scanner</h3>
+            <h6>IOS Mobile App</h6>
+            <p >Introducing PDF Generator Document Scanner: Elevate your document management experience with our
+                all-in-one iOS app. Designed for professionals and students alike, our app streamlines your workflow by
+                providing powerful tools right at your fingertips.</p>
+            <a href="https://apps.apple.com/ng/app/pdf-generator-document-scanner/id6471626000" class="button">Download
+                on App Store</a>
+        </div>
+        <div class="app-item">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/8b/f9/0b/8bf90b2a-be28-5c4e-a558-4b5e11bf0d4d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
+                style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
+            <h3>Signature Quotable: Picframe</h3>
+            <h6>IOS Mobile App</h6>
+            <p>Signature Quotable: Picframe. Showcase your creativity and allow your loved ones to join in your moments of joy.
+            
+            Introducing Signature Quotable: Picframe, an innovative mobile application that empowers users to transform their
+            cherished moments into captivating visual narratives. Seamlessly combining creativity and convenience, Signature
+            Quotable: Picframe offers a comprehensive suite of features including collage creation, photo framing, and quote
+            integration, providing an all-inclusive platform for users to express themselves and commemorate their memories in
+            unique ways.</p>
+            <a href="https://apps.apple.com/ng/app/signature-quotable-picframe/id6462698248" class="button">Download
+                on App Store</a>
+        </div>
+        <div class="app-item">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/5e/d4/cf/5ed4cf6f-7427-d6c8-2eae-952cc46a92bf/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
+                style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
+            <h3>HashTTag Pic Editor</h3>
+            <h6>IOS Mobile App</h6>
+            <p>Unlock the creativity with HashTTag Pic Editor, the ultimate tool to transform your photos into captivating visual
+            stories. Seamlessly merge innovation and convenience with our diverse suite of features designed to elevate your editing
+            experience.
+            Discover the art of hashtagging effortlessly! Our advanced hashtag suggestion and generation feature ensures your posts
+            receive the attention they deserve, expanding your reach across social platforms with targeted and trending tags.</p>
+            <a href="https://apps.apple.com/ng/app/hashttag-pic-editor/id6474639191" class="button">Download
+                on App Store</a>
+        </div>
+    </div>
 
 </body>
+
 </html>
