@@ -10,54 +10,95 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
             color: #333;
+            line-height: 1.6;
         }
         .container {
-            width: 80%;
+            max-width: 1100px;
             margin: auto;
-            overflow: hidden;
+            overflow: auto;
+            padding: 0 20px;
         }
         header {
-            background: #50a3a2;
+            background: #333;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #077187 1px solid;
+            border-bottom: #0779e4 3px solid;
         }
-        header h1 {
-            padding: 5px 0;
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
         }
         .content {
             padding: 20px;
+            background: white;
+            margin-bottom: 20px;
         }
-        .btn {
-            padding: 10px 20px;
+        .app-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .app-item img {
+            max-width: 100px;
+            display: block;
+        }
+        .button {
             display: inline-block;
-            margin: 5px;
             background: #333;
             color: #fff;
+            padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
-            transition: background 0.3s ease;
+            margin: 5px 0;
         }
-        .btn:hover {
-            background: #50a3a2;
+        .button:hover {
+            background: #0779e4;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Turtle LLC</h1>
-        </div>
-    </header>
 
-    <div class="content container">
-        <p>We specialize in crafting engaging mobile games and apps.</p>
-        <a href="#privacy" class="btn">Privacy Policy</a>
-        <a href="#terms" class="btn">Terms and Services</a>
-        <a href="#contact" class="btn">Contact Us</a>
+<header class="container">
+    <h1>Turtle LLC</h1>
+    <p>Making fun mobile games and apps</p>
+</header>
+
+<div class="container content">
+    <h2>About Us</h2>
+    <p>
+        At Turtle LLC, we're passionate about creating engaging mobile games and practical applications that users love. Our dedicated team combines creativity and technology to produce high-quality entertainment and utility apps.
+    </p>
+</div>
+
+<div class="container content">
+    <h2>Our Apps</h2>
+    <!-- App Item 1 -->
+    <div class="app-item">
+        <img src="app-icon-1.png" alt="App Icon 1">
+        <h3>Game One</h3>
+        <p>Experience the adventure in Game One, an epic journey through enchanted lands.</p>
+        <a href="https://appstore.com/gameone" class="button">Download on App Store</a>
     </div>
+    <!-- App Item 2 -->
+    <div class="app-item">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/15/db/5d/15db5d43-18a5-a6eb-15fb-307ef9a879df/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/246x0w.png" alt="PDF Generator Document Scanner">
+        <h3>PDF Generator Document Scanner</h3>
+        <p>ntroducing PDF Generator Document Scanner: Elevate your document management experience with our all-in-one iOS app. Designed for professionals and students alike, our app streamlines your workflow by providing powerful tools right at your fingertips.</p>
+        <a href="https://apps.apple.com/ng/app/pdf-generator-document-scanner/id6471626000" class="button">Download on App Store</a>
+    </div>
+</div>
+
+<div class="container content">
+    <a href="privacy-policy.html" class="button">Privacy Policy</a>
+    <a href="terms-and-services.html" class="button">Terms and Services</a>
+    <a href="contact-us.html" class="button">Contact Us</a>
+</div>
+
 </body>
 </html>
