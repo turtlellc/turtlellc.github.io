@@ -8,87 +8,46 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #444;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-
-        .background-blur {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            filter: blur(4px);
-        }
-
-        .body-background {
-            background-image: url('body-bg.png');
+            color: #ffffff;
+            background-color: #000000;
         }
 
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            color: #000;
-            background-color: #ffffff;
+            color: inherit;
+            background-color: inherit;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
 
-        header {
-            background-color: #007bff;
-            color: #ffffff;
-            padding-bottom: 10px;
-            border-radius: 10px 10px 0 0;
-            margin: -20px -20px 20px -20px;
-            padding: 20px;
-        }
-
-        header h1,
-        header p {
-            margin: 0;
-        }
-
-        nav {
+        .tabs {
             display: flex;
             justify-content: center;
             padding: 10px 0;
         }
 
-        nav a {
+        .tab {
             color: #ffffff;
             text-decoration: none;
             padding: 10px 20px;
             margin: 0 10px;
-            background-color: #0069d9;
-            border-radius: 5px;
             transition: background-color 0.3s;
         }
 
-        nav a:hover {
-            background-color: #0056b3;
-        }
-
-        .header-icon img {
-            width: 80%;
+        .tab:hover {
+            background-color: #0069d9;
         }
 
         .content {
             padding: 20px;
-            background: #f8f9fa;
+            background: black;
             margin-bottom: 20px;
             border-radius: 20px;
         }
 
         .app-item {
-            background: #e9ecef;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 20px;
@@ -110,52 +69,127 @@
             margin-bottom: 20px;
         }
 
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-nav {
+            margin-right: 20px;
+        }
+
+        .footer-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .footer-social {
+            margin-right: 20px;
+        }
+
+        .social-icon {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .footer-subscribe {
+            margin-right: 20px;
+        }
+
+        .footer-subscribe h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-subscribe input[type="email"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .footer-subscribe button {
+            padding: 10px 20px;
+            border: none;
+            background-color: orange;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer-subscribe button:hover {
+            background-color: #ff8c00;
+        }
+
         .button {
-            display: inline-block;
-            background: #28a745;
             color: #ffffff;
+            background-color: #333;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 10px;
             transition: background-color 0.3s;
+            margin-bottom: 10px;
         }
 
         .button:hover {
-            background: #218838;
+            background: #ff8c00;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: orange;
+        }
+
+        p {
+            font-size: 12px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="background-blur body-background"></div>
-
-    <header class="container">
-        <div style="display: flex; flex-direction: row; align-items: center;">
-            <div class="header-icon">
-                <a href="https://turtlellc.github.io/"><img src="icon-web-2.png"
-                        style="height: 100px; width: 120px; border-radius: 10px;" alt="Tech Turtle LLC Logo"></a>
-            </div>
-            <div style="display: flex; flex-direction: column; margin-left: 30px;">
-                <<h1>Tech Turtle LLC</h1></a>
-                    <p>At Tech Turtle LLC, we're passionate about creating engaging mobile games and practical
-                        applications that users
-                        love.</p>
+    <header class="container header">
+        <div class="header-left">
+            <div style="display: flex; flex-direction: column; margin-left: 20px;">
+                <a href="https://turtlellc.github.io"
+                    style="text-decoration: none; color: orange; font-size: 24px;">Tech
+                    Turtle LLC</a>
+                <br>
+                <p style="font-size: 12px;">At Tech Turtle LLC, we're passionate about creating engaging mobile games
+                    and
+                    practical applications that users love.</p>
             </div>
         </div>
-        <nav>
-            <a href="privacy-policy.html" class="button">Privacy Policy</a>
-            <a href="terms-and-services.html" class="button">Terms and Services</a>
-            <a href="contact-us.html" class="button">Contact Us</a>
-            <a href="marketing-url.html" class="button">Marketing URL</a>
-
+        <br>
+        <nav class="nav-links">
+            <div class="button-container">
+                <a href="privacy-policy.html" class="button">Privacy Policy</a>
+                <a href="terms-and-services.html" class="button">Terms and Services</a>
+                <a href="contact-us.html" class="button">Contact Us</a>
+            </div>
         </nav>
     </header>
 
 
     <div class="container content">
         <h2>About Us</h2>
-        <p>
+        <p style="font-size: 15px;">
             Tech Turtle LLC is an innovative technology company specializing in the development of cutting-edge mobile
             applications
             and engaging video games. With a focus on delivering high-quality digital experiences, Tech Turtle LLC
@@ -194,71 +228,103 @@
                 style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
             <h3>PDF Generator Document Scanner</h3>
             <h6>IOS Mobile App</h6>
+            <br>
             <p>Introducing PDF Generator Document Scanner: Elevate your document management experience with our
-                all-in-one iOS app. Designed for professionals and students alike, our app streamlines your workflow by
+                all-in-one iOS app. Designed for professionals and students alike, our app streamlines your workflow
+                by
                 providing powerful tools right at your fingertips.</p>
+            <br>
             <a href="https://apps.apple.com/ng/app/pdf-generator-document-scanner/id6471626000" class="button">Download
                 on App Store</a>
         </div>
+        <hr>
         <div class="app-item">
             <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b7/08/81/b7088123-987c-cce4-68ef-b3968d6d95c8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
                 style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
             <h3>Vibzz : Photo Frame Editor</h3>
             <h6>IOS Mobile App</h6>
-            <p>Vibzz: Photo Frame Editor – Unleash Your Creativity Transform your memories into masterpieces with Vibzz,
+            <br>
+
+            <p>Vibzz: Photo Frame Editor – Unleash Your Creativity Transform your memories into masterpieces with
+                Vibzz,
                 the ultimate
-                photo frame editor designed for storytellers, creatives, and anyone looking to add a touch of magic to
+                photo frame editor designed for storytellers, creatives, and anyone looking to add a touch of magic
+                to
                 their photos.
                 Whether you're looking to encapsulate moments in stunning frames, create expressive collages, edit
                 photos with
                 precision, or craft and share captivating stories, Vibzz has got you covered.</p>
+            <br>
+
             <a href="https://apps.apple.com/ro/app/vibzz-photo-frame-editor/id6471625837" class="button">Download
                 on App Store</a>
         </div>
+        <hr>
+
         <div class="app-item">
             <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/18/19/4d/18194d74-f75f-9e9f-f779-d61380d2b4d0/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/217x0w.png"
                 style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
             <h3>Smart Ai Girlfriend Dating</h3>
             <h6>IOS Mobile App</h6>
+            <br>
+
             <p>An AI Girlfriend application is a sophisticated virtual companion simulator that leverages advanced
                 artificial
                 intelligence to offer a lifelike and interactive user experience. This application enables users to
                 engage in
-                conversations and text exchanges with a virtual partner, thus emulating aspects of a relational dynamic.
+                conversations and text exchanges with a virtual partner, thus emulating aspects of a relational
+                dynamic.
                 The AI-powered
                 companion is designed to respond to diverse prompts and inquiries, enhancing the realism and
                 customization of the
-                interaction. Certain versions of these applications also incorporate advanced features, providing users
+                interaction. Certain versions of these applications also incorporate advanced features, providing
+                users
                 with
                 opportunities for more enriched virtual interactions.</p>
+            <br>
+
             <a href="https://apps.apple.com/ro/app/smart-ai-girlfriend-dating/id6471625886" class="button">Download
                 on App Store</a>
         </div>
+        <hr>
+
         <div class="app-item">
             <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/8b/f9/0b/8bf90b2a-be28-5c4e-a558-4b5e11bf0d4d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
                 style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
             <h3>Signature Quotable: Picframe</h3>
             <h6>IOS Mobile App</h6>
-            <p>Signature Quotable: Picframe. Showcase your creativity and allow your loved ones to join in your moments
+            <br>
+
+            <p>Signature Quotable: Picframe. Showcase your creativity and allow your loved ones to join in your
+                moments
                 of joy.
 
                 Introducing Signature Quotable: Picframe, an innovative mobile application that empowers users to
                 transform their
-                cherished moments into captivating visual narratives. Seamlessly combining creativity and convenience,
+                cherished moments into captivating visual narratives. Seamlessly combining creativity and
+                convenience,
                 Signature
-                Quotable: Picframe offers a comprehensive suite of features including collage creation, photo framing,
+                Quotable: Picframe offers a comprehensive suite of features including collage creation, photo
+                framing,
                 and quote
-                integration, providing an all-inclusive platform for users to express themselves and commemorate their
+                integration, providing an all-inclusive platform for users to express themselves and commemorate
+                their
                 memories in
                 unique ways.</p>
+            <br>
+
             <a href="https://apps.apple.com/ng/app/signature-quotable-picframe/id6462698248" class="button">Download
                 on App Store</a>
         </div>
+        <hr>
+
         <div class="app-item">
             <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/7d/09/b5/7d09b516-079e-1714-92ac-dea2e751f745/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/246x0w.png"
                 style="height: 100px; width: 120px; border-radius: 20px;" alt="PDF Generator Document Scanner">
             <h3>HashTTag Pic Editor</h3>
             <h6>IOS Mobile App</h6>
+            <br>
+
             <p>Unlock the creativity with HashTTag Pic Editor, the ultimate tool to transform your photos into
                 captivating visual
                 stories. Seamlessly merge innovation and convenience with our diverse suite of features designed to
@@ -268,10 +334,24 @@
                 ensures your posts
                 receive the attention they deserve, expanding your reach across social platforms with targeted and
                 trending tags.</p>
+            <br>
+
             <a href="https://apps.apple.com/ng/app/hashttag-pic-editor/id6474639191" class="button">Download
                 on App Store</a>
         </div>
-    </div>
+
+        <footer class="container footer">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-services.html">Terms and Services</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="marketing-url.html">Marketing URL</a>
+                </div>
+            </div>
+            <p>&copy; 2024 Tech Turtle LLC. All rights reserved.</p>
+        </footer>
+
 
 </body>
 
