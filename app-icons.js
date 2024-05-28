@@ -1,79 +1,53 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apps = [
-        { id: '6471625886', link: 'https://apps.apple.com/ro/app/smart-ai-girlfriend-dating/id6471625886' },
-        { id: '6471625837', link: 'https://apps.apple.com/ro/app/vibzz-photo-frame-editor/id6471625837' },
-        { id: '6471626000', link: 'https://apps.apple.com/ng/app/pdf-generator-document-scanner/id6471626000' },
-        { id: '6474639191', link: 'https://apps.apple.com/ng/app/hashttag-pic-editor/id6474639191' },
-        { id: '6462698248', link: 'https://apps.apple.com/ng/app/signature-quotable-picframe/id6462698248' }
-    ];
+    const container = document.getElementById("apps-container");
+    const endpoint = "https://itunes.apple.com/lookup";
 
-    const apiUrlBase = 'https://apps.apple.com/ng/app/signature-quotable-picframe/id';
+    // Function to fetch app data from iTunes Search API by app ID
+    async function fetchAppData(appIds) {
+        const allApps = [];
+        for (const appId of appIds) {
+            const url = new URL(endpoint);
+            url.searchParams.append("id", appId);
 
-    const fetchAppData = (app) => {
-        return fetch(apiUrlBase + app.id)
-            .then(response => response.json())
-            .then(data => {
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
                 if (data.results.length > 0) {
-                    return {
-                        id: app.id,
-                        link: app.link,
-                        iconUrl: data.results[0].artworkUrl100,
-                        appName: data.results[0].trackName,
-                        description: data.results[0].description
-                    };
-                } else {
-                    console.error(`App with ID ${app.id} not found`);
-                    return null;
+                    allApps.push(data.results[0]); // Push the first result
                 }
-            })
-            .catch(error => {
-                console.error('Error fetching app metadata:', error);
-                return null;
-            });
-    };
-
-    const loadAppItems = async () => {
-        const container = document.getElementById('apps-container');
-
-        for (const app of apps) {
-            const appData = await fetchAppData(app);
-
-            if (appData) {
-                const appElement = document.createElement('div');
-                appElement.className = 'app-item';
-
-                const img = document.createElement('img');
-                img.src = appData.iconUrl;
-                img.alt = appData.appName;
-
-                const h3 = document.createElement('h3');
-                h3.innerText = appData.appName;
-
-                const h6 = document.createElement('h6');
-                h6.innerText = 'IOS Mobile App';
-
-                const p = document.createElement('p');
-                p.innerText = appData.description;
-
-                const a = document.createElement('a');
-
-                const space = document.createElement('br');
-
-                a.href = appData.link;
-                a.className = 'button';
-                a.innerText = 'Download on App Store';
-
-                appElement.appendChild(img);
-                appElement.appendChild(h3);
-                appElement.appendChild(h6);
-                appElement.appendChild(space);
-                appElement.appendChild(space);
-                appElement.appendChild(a);
-                appElement.appendChild(p);
-                container.appendChild(appElement);
+            } catch (error) {
+                console.error("Error fetching app data:", error);
             }
         }
-    };
+        return allApps;
+    }
 
-    loadAppItems();
+    // Function to render app items
+    function renderAppItems(apps) {
+        apps.forEach(app => {
+            const appItem = document.createElement("div");
+            appItem.className = "app-item";
+
+            appItem.innerHTML = `
+                <img src="${app.artworkUrl100}" style="height: 100px; width: 100px; border-radius: 20px;" alt="${app.trackName}">
+                <h3>${app.trackName}</h3>
+                <h6>${app.sellerName}</h6>
+                <p>${app.description}</p>
+                <a href="${app.trackViewUrl}" class="button">Download on App Store</a>
+            `;
+
+            container.appendChild(appItem);
+        });
+    }
+
+    // Array of app IDs
+    const appIds = [
+        "6471625886", // Smart AI Girlfriend Dating
+        // Add more app IDs here
+    ];
+
+    // Fetch app data for each app ID and render app items
+    fetchAppData(appIds)
+        .then(apps => renderAppItems(apps))
+        .catch(error => console.error("Error:", error));
 });
