@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { id: '6462698248', link: 'https://apps.apple.com/ng/app/signature-quotable-picframe/id6462698248' }
     ];
 
-    const apiUrlBase = 'https://itunes.apple.com/lookup?id=';
+    const apiUrlBase = 'https://apps.apple.com/ng/app/signature-quotable-picframe/id';
 
     const fetchAppData = (app) => {
         return fetch(apiUrlBase + app.id)
